@@ -28,7 +28,7 @@ $ .venv/bin/activate # on Windows use "venv\Scripts\activate"
 $ pip install -r requirements.txt
 ```
 
-### Run the example
+## Run the example
 
 To run the application you need to setup Flask. In the command prompt type the following commands:
 ```
