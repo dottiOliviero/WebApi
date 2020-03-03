@@ -1,1 +1,3 @@
--flask v1.01
+flask==1.1.1
+xmltodict==0.12.0
+requests==2.18.4
