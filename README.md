@@ -44,6 +44,7 @@ To perform a value conversion, you have to indicate the amount, the source curre
 The endpoint is called _convert_, hence the call to the source code should have the following structure:
 
 http://127.0.0.1:5000/convert/amount=10&src_currency=EUR&dest_currency=JPY&reference_date=2020-02-17
+
 for example this request will return the following json:
 
 ```

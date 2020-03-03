@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 import requests
 import xmltodict
 
@@ -13,7 +13,7 @@ def get_converted_currency(amount,src_currency,dest_currency,reference_date):
         current_value = (dest_curr_value/src_curr_value)*float(amount)
         return jsonify({'amount': current_value, 'currency': dest_currency}), 200
     else:
-        return jsonify({"no available data for the required reference data {0}".format(reference_date)}), 404
+        return render_template('error.html', ref_date = reference_date), 404
 
 
 # function that loads the exchange rates from the ecb site
@@ -27,7 +27,7 @@ def load_exchanges_rates():
 #default home function
 @app.route('/')
 def greeting():
-    return "Welcome to the currency converter"
+    return render_template("Welcome.html")
 
 # function that returns the currency rate values for the desired date and currencies
 def get_currencies(currency_list,reference_date,src_currency,dest_currency):
