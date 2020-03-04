@@ -8,7 +8,7 @@ $ git clone git@github.com:dottiOliviero/WebApi.git
 ```
 Or:
 ```
-$ git clone https://github.com/dottiOliviero/WebApi
+$ git clone https://github.com/dottiOliviero/WebApi.git
 ```
 
 Then change into the WebApi folder:
