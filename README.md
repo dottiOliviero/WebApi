@@ -24,7 +24,7 @@ You can use pip+virtualenv:
 ```
 $ pip install virtualenv  #in case you don't have it 
 $ virtualenv venv
-$ .venv/bin/activate # on Windows use "venv\Scripts\activate"
+$ .venv/bin/activate # on Windows use "$ venv\Scripts\activate"
 $ pip install -r requirements.txt
 ```
 
@@ -32,7 +32,7 @@ $ pip install -r requirements.txt
 
 To run the application you need to setup Flask. In the command prompt type the following commands:
 ```
-$ export FLASK_APP = main.py  # on Windows use "set FLASK_APP=main.py"
+$ export FLASK_APP = main.py  # on Windows use "$ set FLASK_APP=main.py"
 $ flask run
 ```
 
