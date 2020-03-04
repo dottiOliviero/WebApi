@@ -32,7 +32,7 @@ $ pip install -r requirements.txt
 
 To run the application you need to setup Flask. In the command prompt type the following commands:
 ```
-$ set FLASK_APP = main.py  
+$ export FLASK_APP = main.py  # on Windows use "set FLASK_APP=main.py"
 $ flask run
 ```
 
